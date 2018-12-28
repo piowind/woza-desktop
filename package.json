@@ -1,0 +1,50 @@
+{
+  "name": "woza-desktop",
+  "description": "dump ios application ipa by one click",
+  "version": "0.1.0",
+  "author": "everettjf",
+  "private": true,
+  "main": "public/electron.js",
+  "homepage": "./",
+  "dependencies": {
+    "firebase": "^5.7.1",
+    "frida": "^12.2.27",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "woza": "^1.6.8"
+  },
+  "scripts": {
+    "1": "BROWSER=none npm start",
+    "2": "ELECTRON_START_URL=http://localhost:3000 npm run electron",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev": "nf start",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "antd": "^3.11.6",
+    "electron": "^2.0.16",
+    "electron-builder": "^20.38.4"
+  },
+  "build": {
+    "appId": "com.everettjf.wozadesktop",
+    "mac": {
+      "icon": "build/icon.png",
+      "category": "public.app-category.developer-tools"
+    }
+  }
+}
