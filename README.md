@@ -2,6 +2,10 @@
 
 Dump application ipa from jailbroken iOS based on frida. 
 
+## Download
+
+[Latest Release](https://github.com/woza-lab/woza-desktop/releases)
+
 ## Environment
 
 1. frida
